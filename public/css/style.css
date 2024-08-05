@@ -1,0 +1,93 @@
+*{
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap');
+body{
+    font-family: 'Roboto', sans-serif;   
+   scroll-behavior: smooth;
+}
+html{
+    scroll-behavior: smooth;
+}
+@media (max-width:800px) {
+    .exploresize{
+    font-size: 20px;
+    }  
+    .exploresizeP{
+        font-size: 13px;
+    }
+}
+@media (max-width:570px) {
+    .testimonial{
+        padding-bottom: 20px;
+    }
+}
+@media (min-width:572px) and (max-width:993px) {  
+    .testimonial{
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width:570px) {  
+    .feature{
+        padding-bottom: 20px;
+    }
+    .featureh5{
+        text-align: center;
+    }
+    .featurep{
+        text-align: center;
+    }
+    .featureimg{
+        width: 100%;
+        text-align: center;
+    }
+}
+@media (min-width:572px) and (max-width:993px) { 
+    .feature{
+        padding-bottom: 20px;
+    }
+}
+@media (max-width:600px) {
+    .twoimg{
+        margin-bottom: 20px;
+    }
+}
+.hi{
+    float: right;
+}
+
+.navbar-toggler{
+    border: none;
+    font-size: 1.15rem;
+}
+.navbar-toggler:focus,.btn-close:focus{
+    box-shadow: none;
+    outline: none;
+}
+.nav-link{
+    font-weight: 500;
+    position: relative;
+}
+@media (min-width:991px) {
+    .nav-link::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: teal;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+}
+.nav-link:hover::before{
+width: 100%;
+visibility: visible;
+}
+}
+.navbar-brand{
+    font-weight: 700;
+}
