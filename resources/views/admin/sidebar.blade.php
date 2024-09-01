@@ -11,17 +11,21 @@
                     </a>
                 </li>
 
+                <li class="{{Request::is('users') ? 'active-li':''}}">
                     <a href="{{url('/users')}}">
                         <span class="icon">
                             <ion-icon name="home-outline"></ion-icon>
                         </span>
+                        <span class="title {{Request::is('users') ? 'active-a':''}}">Users</span>
                     </a>
                 </li>
 
+                <li class="{{Request::is('products') ? 'active-li':''}}">
                     <a href="{{url('/products')}}">
                         <span class="icon">
                             <ion-icon name="people-outline"></ion-icon>
                         </span>
+                        <span class="title {{Request::is('products') ? 'active-a':''}}">Products</span>
                     </a>
                 </li>
 

@@ -16,6 +16,13 @@
   --black1: #222;
   --black2: #999;
 }
+.active-li{
+  background-color: var(--white);
+ 
+}
+.active-a{
+  color: var(--blue);
+}
 body {
   min-height: 100vh;
   overflow-x: hidden;
@@ -55,8 +62,10 @@ body {
   border-bottom-left-radius: 30px;
 }
 
+/* .navigation ul li:hover,
 .navigation ul li.hovered {
   background-color: var(--white);
+} */
 .navigation ul li.active{
   background-color: var(--white);
 }

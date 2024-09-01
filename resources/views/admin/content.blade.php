@@ -7,6 +7,7 @@
     <!-- <link rel="stylesheet" href="assets/css/all.min.css"> -->
 	<link rel="stylesheet" href="{{url('/admin/css/all.min.css')}}">
 	<link rel="stylesheet" href="{{url('/admin/css/fontawesome.min.css')}}">
+    <title>Dashboard</title>
 </head>
 <body>
 <div class="details">
