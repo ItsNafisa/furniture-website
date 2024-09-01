@@ -19,7 +19,6 @@ use File;
 class ProductController extends Controller
 {
     public function index(){
-        $products=Product::all();
        
         $userCount=User::where('role',0)->count();
 
@@ -84,7 +83,6 @@ $sales=$sales+$item['quantity'];
        
 
         $data->save();
-        $products=Product::all();
 
         $userCount=User::where('role',0)->count();
         
@@ -169,7 +167,6 @@ $sales=$sales+$item['quantity'];
                 $product->stock_status=$request->stock_status;
                 $product->category_id=$request->category_id;
                 $product->save();
-                $products=Product::all();
 
                 $userCount=User::where('role',0)->count();
         
@@ -215,7 +212,7 @@ $pro=Product::find($id);
                      $sales=$sales+$item['quantity'];
                      }
              
-                     $products=Product::all();
+                     $products=Product::orderBy('created_at','desc')->get();
                     //  $request->session()->forget('product_updated_successfully');
                     //  $request->session()->forget('product_added_successfully');
                     //  Session::flash('product_deleted_successfully','Product deleted successfully');
